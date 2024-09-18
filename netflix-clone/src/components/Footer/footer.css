@@ -1,0 +1,107 @@
+/* General Footer Styling */
+.footer {
+  background-color: #111; /* Netflix dark background */
+  color: #757575; /* Netflix grey text */
+  padding: 40px 20px;
+  font-family: "Arial", sans-serif; /* Common Netflix font */
+}
+
+.footer__outer-container {
+  max-width: 100%;
+}
+
+.footer__inner-container {
+  max-width: 1000px; /* Restrict the inner content to a central container */
+  margin: 0 auto;
+  text-align: left; /* Align text to the left */
+}
+
+/* Footer Icons */
+.footer__icons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer__icons a {
+  margin: 0 15px;
+  color: #757575; /* Default icon color */
+  font-size: 30px;
+  transition: color 0.3s ease;
+}
+
+.footer__icons a:hover {
+  color: #e50914; /* Netflix red color on hover */
+}
+
+/* Footer Links in Columns */
+.footer__data {
+  display: flex; /* Flexbox for column layout */
+  justify-content: space-between; /* Space between the columns */
+  margin-bottom: 20px;
+}
+
+.footer__data-group {
+  flex: 1;
+  min-width: 150px; /* Ensure the columns don't get too small */
+}
+
+.footer__data ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__data ul li {
+  margin-bottom: 10px;
+}
+
+.footer__data ul li a {
+  color: #757575; /* Grey color for links */
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer__data ul li a:hover {
+  color: #e50914; /* Netflix red color on hover */
+}
+
+/* Language Button */
+.footer__language {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer__language button {
+  background-color: transparent;
+  border: 1px solid #757575;
+  color: #757575;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.footer__language button:hover {
+  border-color: #e50914; /* Red border on hover */
+}
+
+/* Footer Copyright */
+.footer__copyright {
+  font-size: 14px;
+  color: #757575; /* Grey text */
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer__data {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__data-group {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
