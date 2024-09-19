@@ -111,7 +111,7 @@ const Footer = () => {
 
           {/* Footer Copyright */}
           <div className="footer__copyright">
-            <p>© 2024 Netflix Clone</p>
+            <p>© 2024 Netflix Clone By Rashida Jabir</p>
           </div>
         </div>
       </div>

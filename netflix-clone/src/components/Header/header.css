@@ -2,15 +2,18 @@
 .header_outer_container {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
+  padding: 20px;
   background-color: rgba(
     20,
     20,
     20,
     0.9
   ); /* Semi-transparent dark background */
+  transition: backgriund-color 0.5s ease;
   padding: 10px 0;
-  z-index: 1000;
+  z-index: 1;
 }
 
 /* Inner Header Container */
@@ -33,7 +36,8 @@
 .header_left ul li {
   margin-right: 20px;
   color: #fff;
-  font-size: 14px;
+  font-family: Montserrat;
+  font-size: 16px;
   font-weight: 500;
   cursor: pointer;
   transition: color 0.3s;
@@ -46,6 +50,7 @@
 .header_left img {
   cursor: pointer;
   margin-right: 20px;
+  width: 80px;
 }
 
 /* Right Side: Icons */

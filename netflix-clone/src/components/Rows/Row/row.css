@@ -1,0 +1,90 @@
+/* row.css */
+
+.row {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-bottom: none; /* Remove any unwanted border lines */
+}
+
+.row__title {
+  color: white;
+  font-family: Roboto;
+
+  font-size: 1.8rem;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.row__posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 10px 20px;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.row__posters::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+.row__poster {
+  width: 100px;
+  object-fit: contain;
+  margin-right: 10px;
+  transition: transform 450ms;
+  cursor: pointer;
+}
+
+.row__poster:hover {
+  transform: scale(1.1);
+}
+
+.row__poster--large {
+  width: 150px; /* Larger size for larger rows */
+}
+
+.row--first .row__poster {
+  width: 150px; /* Larger size for the first row */
+}
+
+.row__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.row__modalClose {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #e50914;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+}
+
+.row__modalClose:hover {
+  background: #b81d12;
+}
+
+.row__modal iframe {
+  width: 80vw;
+  height: 45vw;
+  max-width: 1000px;
+  max-height: 600px;
+  border: none;
+}
